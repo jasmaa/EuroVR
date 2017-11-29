@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour {
 	
 	public void GoNextScene(){
 		FadeFromBlack ();
-		SceneManager.LoadScene ((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCount + 1);
+		SceneManager.LoadScene ((SceneManager.GetActiveScene().buildIndex) % (SceneManager.sceneCountInBuildSettings - 1) + 1);
 	}
 	
 	public void FadeToBlack(){
