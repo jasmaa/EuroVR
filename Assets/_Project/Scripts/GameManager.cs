@@ -10,6 +10,14 @@ public class GameManager : MonoBehaviour {
 
 	Image fadeScreen;
 
+	string[] infoArray = {
+		"",
+		"This is AP Euro",
+		"Charles Townshend was a British whig who had a strong interest in turnip farming, earning him the nickname 'Turnip'",
+		"placeholder",
+	};
+	public Material[]  skyboxArray;
+
 	// Use this for initialization
 	void Start () {
 		if (instance == null) {
@@ -23,13 +31,20 @@ public class GameManager : MonoBehaviour {
 	
 	public void GoNextScene(){
 		FadeFromBlack ();
-		SceneManager.LoadScene ((SceneManager.GetActiveScene().buildIndex) % (SceneManager.sceneCountInBuildSettings - 1) + 1);
+
+		int nextScene = (SceneManager.GetActiveScene ().buildIndex) % (SceneManager.sceneCountInBuildSettings - 1) + 1;
+
+		// Change for next exhibit
+		Camera.main.GetComponent<Skybox>().material = skyboxArray[nextScene];
+		GameObject.Find ("InfoText").GetComponent<Text> ().text = infoArray [nextScene];
+
+		SceneManager.LoadScene (nextScene);
 	}
 	
 	public void FadeToBlack(){
-			fadeScreen.color = Color.black;
-			fadeScreen.canvasRenderer.SetAlpha (0.0f);
-			fadeScreen.CrossFadeAlpha(1.0f, 0.5f, false);
+		fadeScreen.color = Color.black;
+		fadeScreen.canvasRenderer.SetAlpha (0.0f);
+		fadeScreen.CrossFadeAlpha(1.0f, 0.5f, false);
 	}
 	public void FadeFromBlack(){
 		fadeScreen.color = Color.black;
