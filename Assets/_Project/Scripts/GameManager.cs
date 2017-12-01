@@ -14,7 +14,8 @@ public class GameManager : MonoBehaviour {
 		"",
 		"You have finished the simulation.\n\nClick the next arrow to go again.",
 		"Charles Townshend was a British whig who had a strong interest in turnip farming, earning him the nickname 'Turnip'",
-		"Townshend's four field crop rotation consisted of rotating wheat, turnip, barley, and clovers. Turnips and clovers would replenish lost nitrogen in the soil as well as serve as fodder for livestock."
+		"Townshend's four field crop rotation consisted of rotating wheat, turnip, barley, and clovers. Turnips and clovers would replenish lost nitrogen in the soil as well as serve as fodder for livestock.",
+		"Jethro Tull invented a seed drill. The drill plows the land in drills, dumps seeds, and then covers the seed back up with soil.",
 	};
 	public Material[]  skyboxArray;
 
