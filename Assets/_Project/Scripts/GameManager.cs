@@ -12,9 +12,9 @@ public class GameManager : MonoBehaviour {
 
 	string[] infoArray = {
 		"",
-		"This is AP Euro",
+		"You have finished the simulation.\n\nClick the next arrow to go again.",
 		"Charles Townshend was a British whig who had a strong interest in turnip farming, earning him the nickname 'Turnip'",
-		"placeholder",
+		"Townshend's four field crop rotation consisted of rotating wheat, turnip, barley, and clovers. Turnips and clovers would replenish lost nitrogen in the soil as well as serve as fodder for livestock."
 	};
 	public Material[]  skyboxArray;
 
@@ -34,13 +34,17 @@ public class GameManager : MonoBehaviour {
 
 		int nextScene = (SceneManager.GetActiveScene ().buildIndex) % (SceneManager.sceneCountInBuildSettings - 1) + 1;
 
-		// Change for next exhibit
-		Camera.main.GetComponent<Skybox>().material = skyboxArray[nextScene];
-		GameObject.Find ("InfoText").GetComponent<Text> ().text = infoArray [nextScene];
-
-		SceneManager.LoadScene (nextScene);
+		GoTo (nextScene);
 	}
-	
+
+	public void GoTo(int n){
+		// Change for next exhibit
+		Camera.main.GetComponent<Skybox>().material = skyboxArray[n];
+		GameObject.Find ("InfoText").GetComponent<Text> ().text = infoArray [n];
+
+		SceneManager.LoadScene (n);
+	}
+
 	public void FadeToBlack(){
 		fadeScreen.color = Color.black;
 		fadeScreen.canvasRenderer.SetAlpha (0.0f);

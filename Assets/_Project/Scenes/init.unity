@@ -937,7 +937,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 20796950077fac14d9da10496c9fac1b, type: 2}
   - {fileID: 2100000, guid: 20796950077fac14d9da10496c9fac1b, type: 2}
   - {fileID: 2100000, guid: dfcb9b59afee9ad43be8d5c7d8c63976, type: 2}
-  - {fileID: 2100000, guid: 20796950077fac14d9da10496c9fac1b, type: 2}
+  - {fileID: 2100000, guid: dfcb9b59afee9ad43be8d5c7d8c63976, type: 2}
   - {fileID: 0}
   - {fileID: 0}
 --- !u!1 &1163990679
@@ -1281,10 +1281,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -1292,7 +1292,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is AP Euro in 3D whoa
+  m_Text: 'This is AP Euro in 3D.
+
+
+    Click the next arrow to learn about agriculture in Enlightenment period Europe.'
 --- !u!222 &1860746945
 CanvasRenderer:
   m_ObjectHideFlags: 0
