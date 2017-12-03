@@ -936,6 +936,7 @@ MonoBehaviour:
   skyboxArray:
   - {fileID: 2100000, guid: 20796950077fac14d9da10496c9fac1b, type: 2}
   - {fileID: 2100000, guid: 20796950077fac14d9da10496c9fac1b, type: 2}
+  - {fileID: 2100000, guid: c925478cad2fe9543bd462ffc54955c7, type: 2}
   - {fileID: 2100000, guid: dfcb9b59afee9ad43be8d5c7d8c63976, type: 2}
   - {fileID: 2100000, guid: dfcb9b59afee9ad43be8d5c7d8c63976, type: 2}
   - {fileID: 2100000, guid: dfcb9b59afee9ad43be8d5c7d8c63976, type: 2}
