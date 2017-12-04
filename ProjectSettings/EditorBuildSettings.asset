@@ -26,3 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Project/Scenes/exhibit04.unity
     guid: bfd0126078f758f4885b783f4b8a1795
+  - enabled: 1
+    path: Assets/_Project/Scenes/exhibit05.unity
+    guid: 6ba5af0a5fb98f541bb693f5c2181865

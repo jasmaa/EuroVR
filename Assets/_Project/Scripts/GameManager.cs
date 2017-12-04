@@ -12,12 +12,13 @@ public class GameManager : MonoBehaviour {
 
 	string[] infoArray = {
 		"",
-		"You have finished the simulation.\n\nClick the next arrow to go again.",
-		"Great Britain and the Low Countries experienced a agricultural revolution in the Enlightenment.",
+		"You have finished the simulation. This has been AP Euro in 3D.\n\nClick the next arrow to go again.",
+		"Great Britain and the Low Countries experienced a agricultural revolution in the Enlightenment, spurred by the introduction of many new methods and technologies.",
 		"One pioneer of the revolution was Charles Townshend, a British whig who had a strong interest in turnip farming, earning him the nickname 'Turnip'",
 		"Townshend's four field crop rotation consisted of rotating wheat, turnip, barley, and clovers. Turnips and clovers would replenish lost nitrogen in the soil as well as serve as fodder for livestock.",
 		"The Enlightenment saw much innovative farming equipment. One of these was the seed drill, a machine able to plow the land in drills, dump seeds, and then cover the seeds back up with soil.",
 		"The seed drill was invented by British agriculturalist, Jethro Tull. Tull promoted land hoeing and also believed the source of all agricultural productivity was derivative from the soil.",
+		"The agricultural revolution ultimately increased the yield of food production. More food meant more sustenance for people causing the population of Europe to grow exponentially.",
 	};
 	public Material[]  skyboxArray;
 
